@@ -70,6 +70,10 @@ myApp.controller('registerController',['$scope','$http','$window',function ($sco
 
 myApp.controller('welcomeController',['$scope',function($scope){
     $scope.saveitems=function(){
+<<<<<<< HEAD
         alert("item saved to cart!");
+=======
+        alert("item saved");
+>>>>>>> master
     }
 }])
