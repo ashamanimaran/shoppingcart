@@ -8,6 +8,7 @@ myApp.config(['$routeProvider',function($routeProvider){
     })
     .when("/welcome",{
        templateUrl:"pages/welcome.html",
+       controller:"welcomeController"
     })
     .when("/error",{
        templateUrl:"pages/error.html",
@@ -67,3 +68,8 @@ myApp.controller('registerController',['$scope','$http','$window',function ($sco
     }
 }]);
 
+myApp.controller('welcomeController',['$scope',function($scope){
+    $scope.saveitems=function(){
+        alert("item saved to cart!");
+    }
+}])
